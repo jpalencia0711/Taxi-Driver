@@ -1,0 +1,343 @@
+session_start();
+
+if ($_COOKIE['cookie'] != 1) {
+
+$advice = "<div id='advice' style='text-align:center;bottom:850;position:fixed;
+
+width:100%;z-index:1000;background-color:#d18f39;'>
+
+Este sitio utiliza cookies. <a href='#' onclick='hide()'>[ Aceptar ] </a>
+
+</div>";
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+     <title>Taxi Driver</title>
+     
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+
+
+     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+
+    
+     
+     <script language="javascript">
+
+        function hide() {
+        
+        document.getElementById("advice").style.visibility = "hidden";
+        
+        document.getElementById("advice").innerHTML = "";
+        
+        document.cookie="cookie=1";
+        
+        }
+        
+        </script>
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    ?=$advice;?
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Taxi Driver</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Quiénes somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">Tipos de taxis</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Tarifas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contáctanos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="index 2.html" class="nav-link smoothScroll">Ingles</a>
+                    </li>
+
+                </ul>
+                
+                <ul class="social-icon ml-lg-3">
+                    <li><a href="https://www.facebook.com/people/Taxi-Driver/100081025774606/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/Taxi_Driver_Ofi" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/taxi_driver.oficial/" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+            <div class="bg-overlay"></div>
+
+               <div class="container">
+                    <div class="row">
+
+                         <div class="col-lg-8 col-md-10 mx-auto col-12">
+                              <div class="hero-text mt-5 text-center">
+
+                                    <h6 data-aos="fade-up" data-aos-delay="300">Barato, cómodo y rapido</h6>
+
+                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Taxi Driver</h1>
+
+                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Más</a>
+                                   
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+
+     <section class="about section" id="about">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+                                <h1 class="mb-4" data-aos="fade-up" data-aos-delay="300">Quiénes somos</h1>
+
+                                <p data-aos="fade-up" data-aos-delay="400">Somos una empresa de Transporte Público de Pasajeros creada con el ánimo de prestar un servicio acorde con las necesidades del publico en el área local.</p>
+                                    <br>
+                                <p data-aos="fade-up" data-aos-delay="500">Ofrecemos a nuestros clientes variedad en los servicios y clases de vehículos, teniendo como meta fortalecer nuestra presencia en el mercado con la mejor calidad, atención y satisfacción de las necesidades en transporte.</p>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+     <section class="class section" id="class">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center mb-5">
+                                <h6 data-aos="fade-up">Elige tu Taxi</h6>
+
+                                <h2 data-aos="fade-up" data-aos-delay="200">Tipos:</h2>
+                             </div>
+
+                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                                <div class="class-thumb">
+                                    <img src="familiar.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Familiar</h3>
+                                       
+
+                                        <p class="mt-3">Taxi familiar con espacio para 3 personas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="class-thumb">
+                                    <img src="furgoneta.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Furgoneta</h3>
+                                       
+
+                                        <p class="mt-3">Taxi furgoneta con espacio para 7 personas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="class-thumb">
+                                    <img src="Basico.jpg" class="img-fluid" alt="Class">
+
+                                    <div class="class-info">
+                                        <h3 class="mb-1">Básico</h3>
+                                        
+
+                                        <p class="mt-3">Taxi Básico con espacio para 3 personas</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+               </div>
+     </section>
+
+     <section class="schedule section" id="schedule">
+               <div class="container">
+                    <div class="row">
+
+                            <div class="col-lg-12 col-12 text-center">
+                                <h6 data-aos="fade-up">Taxi Driver</h6>
+
+                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Nuestras Tarifas</h2>
+                             </div>
+
+                             <div class="col-lg-12 py-5 col-md-12 col-12">
+                                 <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
+
+                                     <thead class="thead-light">
+                                         <th><i class="fa fa-calendar"></i></th>
+                                         <th>Familiar</th>
+                                         <th>Furgoneta</th>
+                                         <th>Básico</th>
+                                     </thead>
+
+                                     <tbody>
+                                         <tr>
+                                            <td><small>Mañana (8:00 - 14:00)</small></td>
+                                            <td>
+                                                <strong>3€/km</strong>                                                
+                                            </td>
+                                            <td>
+                                                <strong>5€/km</strong>                                           
+                                            </td> 
+                                            <td>
+                                                <strong>2€/km</strong>
+                                            </td>                 
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>Tardes (14:00 - 20:00)</small></td>
+                                            <td>
+                                                <strong>3€/km</strong>
+                                            </td>
+                                            <td>
+                                                <strong>5€/km</strong>
+                                            </td>
+                                            <td>
+                                                <strong>2€/km</strong>                          
+                                            </td>
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>Nocturno (20:00 - 8:00)</small></td>
+                                            <td>
+                                                <strong>4€/km</strong>
+                                            </td>
+                                            <td>
+                                                <strong>6€/km</strong>
+                                            
+                                            </td>
+                                            <td>
+                                                <strong>3€/km</strong>                         
+                                            </td>                                       
+                                         </tr>
+
+                                         <tr>
+                                            <td><small>Festivos (cualquier hora)</small></td>
+                                            <td>
+                                                <strong>4€/km</strong>    
+                                            </td>
+                                            <td>
+                                                <strong>6€/km</strong>                                             
+                                            </td>                                         
+                                            <td>
+                                                <strong>3€/km</strong>                                              
+                                            </td>
+                                         </tr>
+
+                                     </tbody>
+                                 </table>
+                             </div>
+                    </div>
+               </div>
+     </section>
+
+
+     <section class="contact section" id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Contáctanos</h2>
+
+                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" class="form-control" name="cf-name" placeholder="Nombre">
+
+                            <input type="email" class="form-control" name="cf-email" placeholder="Teléfono">
+
+                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Ubicación"></textarea>
+
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Donde estamos</h2>
+
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> Tarragona</p>
+<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">                     
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3005.7657567897195!2d1.23958!3d41.1178066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fd2dc18614d3%3A0x5227e709134939d8!2sParc%20de%20la%20Ciutat!5e0!3m2!1sca!2ses!4v1650354371355!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <footer class="site-footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; 2022 Taxi Driver Co.
+                    </div>
+                    
+                        <p class="mr-4">
+                            <a>Seguridad</a>
+                        </p>
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">TaxiDriver@TaxiDriver.com</a>
+                        
+                        <p><i class="fa fa-phone mr-1"></i> 977 35 19 72</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
